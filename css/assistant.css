@@ -1,0 +1,175 @@
+.assistant-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bubble-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.bubble-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.4);
+    border-color: #ff00ff;
+}
+
+.bubble-icon i {
+    font-size: 24px;
+    color: #00ffff;
+    transition: color 0.3s ease;
+}
+
+.bubble-icon:hover i {
+    color: #ff00ff;
+}
+
+.bubble-content {
+    width: 0;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ffff;
+    border-radius: 15px;
+    margin-right: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.assistant-bubble.expanded .bubble-content {
+    width: 300px;
+    opacity: 1;
+}
+
+.bubble-header {
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid #00ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bubble-header h3 {
+    margin: 0;
+    color: #00ffff;
+    font-size: 16px;
+}
+
+.voice-btn {
+    background: none;
+    border: none;
+    color: #00ffff;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.voice-btn:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+.bubble-body {
+    height: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 8px 12px;
+    border-radius: 15px;
+    max-width: 80%;
+    word-break: break-word;
+}
+
+.user-message {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid #00ffff;
+    align-self: flex-end;
+    color: #fff;
+}
+
+.assistant-message {
+    background: rgba(255, 0, 255, 0.1);
+    border: 1px solid #ff00ff;
+    align-self: flex-start;
+    color: #fff;
+}
+
+.input-area {
+    padding: 15px;
+    border-top: 1px solid #00ffff;
+    display: flex;
+    gap: 10px;
+}
+
+.input-area input {
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #00ffff;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #fff;
+    outline: none;
+}
+
+.input-area input:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+.send-btn {
+    background: none;
+    border: none;
+    color: #00ffff;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.send-btn:hover {
+    color: #ff00ff;
+    transform: scale(1.1);
+}
+
+/* Scrollbar Styling */
+.messages::-webkit-scrollbar {
+    width: 5px;
+}
+
+.messages::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background: #00ffff;
+    border-radius: 5px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+    background: #ff00ff;
+}
