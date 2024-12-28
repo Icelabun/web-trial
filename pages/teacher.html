@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Portal - StudyZone</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body class="teacher-portal">
+    <!-- Progress Bar -->
+    <div id="progressBar" class="progress-bar"></div>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="gradient-shift teacher-sidebar">
+        <div class="sidebar-header">
+            <h3 class="text-white">Teacher Portal</h3>
+        </div>
+        <ul class="list-unstyled components stagger-children">
+            <li>
+                <a href="../index.html" class="interactive">
+                    <i class="fas fa-home"></i> Main Site
+                </a>
+            </li>
+            <li class="active">
+                <a href="teacher.html" class="interactive">
+                    <i class="fas fa-chalkboard"></i> Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="#" class="interactive">
+                    <i class="fas fa-users"></i> My Classes
+                </a>
+            </li>
+            <li>
+                <a href="#" class="interactive">
+                    <i class="fas fa-book"></i> Course Material
+                </a>
+            </li>
+            <li>
+                <a href="#" class="interactive">
+                    <i class="fas fa-chart-bar"></i> Analytics
+                </a>
+            </li>
+            <li>
+                <a href="#" class="interactive">
+                    <i class="fas fa-calendar-check"></i> Schedule
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Header -->
+        <header class="teacher-header text-center">
+            <h1 class="mega-title animate-in">Welcome to Teacher Portal</h1>
+            <p class="header-subtitle animate-in">Empower your teaching with our advanced tools</p>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section class="container py-5">
+            <div class="row stagger-children">
+                <!-- Stats Cards -->
+                <div class="col-md-3 mb-4">
+                    <div class="card stat-card hover-lift pulse-on-hover">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-graduate fa-3x mb-3 text-primary"></i>
+                            <h3 class="counter">156</h3>
+                            <p>Active Students</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card stat-card hover-lift pulse-on-hover">
+                        <div class="card-body text-center">
+                            <i class="fas fa-book-open fa-3x mb-3 text-success"></i>
+                            <h3 class="counter">12</h3>
+                            <p>Active Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card stat-card hover-lift pulse-on-hover">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tasks fa-3x mb-3 text-info"></i>
+                            <h3 class="counter">89</h3>
+                            <p>Assignments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card stat-card hover-lift pulse-on-hover">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-3x mb-3 text-warning"></i>
+                            <h3 class="counter">94%</h3>
+                            <p>Average Score</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="col-md-6 mb-4">
+                    <div class="card action-card floating-card">
+                        <div class="card-header">
+                            <h3>Quick Actions</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="quick-actions stagger-children">
+                                <button class="btn btn-primary btn-lg mb-3 w-100 hover-lift">
+                                    <i class="fas fa-plus-circle me-2"></i>Create New Course
+                                </button>
+                                <button class="btn btn-success btn-lg mb-3 w-100 hover-lift">
+                                    <i class="fas fa-file-alt me-2"></i>Create Assignment
+                                </button>
+                                <button class="btn btn-info btn-lg mb-3 w-100 hover-lift">
+                                    <i class="fas fa-video me-2"></i>Schedule Live Class
+                                </button>
+                                <button class="btn btn-warning btn-lg w-100 hover-lift">
+                                    <i class="fas fa-bell me-2"></i>Send Announcement
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="col-md-6 mb-4">
+                    <div class="card activity-card floating-card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="activity-list stagger-children">
+                                <div class="activity-item">
+                                    <i class="fas fa-user-check text-success"></i>
+                                    <span>New student joined Advanced Mathematics</span>
+                                    <small class="text-muted">2 minutes ago</small>
+                                </div>
+                                <div class="activity-item">
+                                    <i class="fas fa-file-upload text-primary"></i>
+                                    <span>Assignment submitted by John Doe</span>
+                                    <small class="text-muted">15 minutes ago</small>
+                                </div>
+                                <div class="activity-item">
+                                    <i class="fas fa-comment text-info"></i>
+                                    <span>New question in Physics forum</span>
+                                    <small class="text-muted">1 hour ago</small>
+                                </div>
+                                <div class="activity-item">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span>Course review received</span>
+                                    <small class="text-muted">2 hours ago</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
